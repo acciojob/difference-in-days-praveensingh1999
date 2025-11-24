@@ -4,7 +4,7 @@ var dateDiffInDays = function (date1, date2) {
   const d2 = new Date(date2);
 
   const diffMs = d2 - d1; 
-  return Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  return Math.round(diffMs / (1000 * 60 * 60 * 24));
 	
 };
 
